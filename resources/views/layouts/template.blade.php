@@ -53,15 +53,17 @@
     </div>
 
     <main class="container">
-       @yield('content')
+        @yield('content')
     </main>
 
-    <footer class="blog-footer">
-        <p>Copyright © {{date('Y')}} <a href="/">T1-2021130016</a></p>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
-    </footer>
+    <div class="container text-center">
+        <footer class="cointainer blog-footer">
+            <p>Copyright © {{ date('Y') }} <a href="/">T1-2021130016</a></p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
