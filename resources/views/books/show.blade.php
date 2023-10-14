@@ -4,11 +4,12 @@
 
 @section('content')
     <div class="blog-post my-4">
-        <h1 class="display-5 fw-bold">{{ $book->isbn }}</h1>
-        <h1 class="display-5 fw-bold">{{ $book->judul }}</h1>
-        <h1 class="display-5 fw-bold">{{ $book->halaman }}</h1>
-        <h1 class="display-5 fw-bold">{{ $book->kategori }}</h1>
-        <h1 class="display-5 fw-bold">{{ $book->penerbit }}</h1>
-        <p class="blog-post-meta">{{ $book->updated_at }}</p>
+        <h1 class="display-4">{{ $book->judul }}</h1>
+        <p class="blog-post-meta">ISBN: {{ $book->isbn }}</p>
+        <p class="blog-post-meta">Penerbit: {{ $book->penerbit }}</p>
+        <p class="blog-post-meta">Halaman: {{ $book->halaman }}</p>
+        <p class="blog-post-meta">Kategori: {{ $book->kategori }}</p>
+        <p class="blog-post-meta">Diterbitkan: {{ $book->created_at->format('d M Y H:i') }}</p>
+        <p class="blog-post-meta">Diperbarui: {{ $book->updated_at->format('d M Y H:i') }}</p>
     </div>
 @endsection
